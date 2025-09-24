@@ -23,22 +23,22 @@ This project involved designing and implementing a complete Security Operations 
 
 ### Phase 1: Lab Architecture Design
 *Ref 1: Network Diagram*
-![Network Architecture](https://i.imgur.com/network-arch.png)
+![Network Architecture](https://github.com/hameza123/On-Premise-SOC/blob/main/diagram-final-5.png)
 **Description**: Designed a segmented network architecture with separate zones for defensive tools, attacker infrastructure, and target assets. The diagram shows VLAN segmentation, security zones, and communication paths between SIEM components, endpoints, and management interfaces.
 
 ### Phase 2: SOC Stack Deployment
 *Ref 2: Elastic Stack Deployment*
-![Elastic Deployment](https://i.imgur.com/elastic-deploy.png)
+![Elastic Deployment]
 **Description**: Configured Elastic Stack components including Elasticsearch for log storage and Kibana for visualization. Shows the integration of Elastic Agents for endpoint monitoring and Fleet Server for centralized management.
 
 ### Phase 3: Attack Simulation (Red Team)
 *Ref 3: Brute Force Attack Simulation*
-![Brute Force Simulation](https://i.imgur.com/brute-force.png)
+![Brute Force Simulation](https://github.com/hameza123/On-Premise-SOC/blob/main/assh-alerts.png)
 **Description**: Executed SSH and RDP brute-force attacks to gain initial access. The screenshot shows attack patterns and successful credential compromises that triggered our detection rules.
 
 ### Phase 4: Detection Engineering (Blue Team)
 *Ref 4: Custom Detection Rules*
-![Kibana Detection Rules](https://i.imgur.com/detection-rules.png)
+![Kibana Detection Rules](https://github.com/hameza123/On-Premise-SOC/blob/main/Rules.png)
 **Description**: Authored and implemented custom detection rules in Kibana including:
 - "6+ Failed RDP Logins in 5 Minutes" 
 - "Suspicious Process: apollo.exe"
@@ -47,12 +47,12 @@ This project involved designing and implementing a complete Security Operations 
 
 ### Phase 5: Threat Hunting & Visualization
 *Ref 5: Security Dashboards*
-![Kibana Dashboards](https://i.imgur.com/security-dashboards.png)
+![Kibana Dashboards](https://github.com/hameza123/On-Premise-SOC/blob/main/Dashboard.png)
 **Description**: Built comprehensive Kibana dashboards for real-time monitoring including "Failed SSH/RDP Logins Over Time" and "Suspicious Windows Activity" that provided visual indicators of the ongoing attack.
 
 ### Phase 6: Incident Response
 *Ref 6: Incident Ticketing*
-![osTicket Integration](https://i.imgur.com/incident-ticket.png)
+![osTicket Integration](https://github.com/hameza123/On-Premise-SOC/blob/main/ticket.png)
 **Description**: Automated incident creation in osTicket showing how SIEM alerts automatically generated tickets for security team response, including host isolation commands executed through Elastic Defend.
 
 ## Key Achievements
